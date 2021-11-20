@@ -9,7 +9,6 @@
 /node_modules
 
 # IDEs and editors
-.vscode/
 /.idea
 .project
 .classpath
@@ -17,13 +16,6 @@
 *.launch
 .settings/
 *.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 
 # misc
 /.sass-cache
