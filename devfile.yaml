@@ -12,7 +12,7 @@ components:
           name: angular
           protocol: http
           targetPort: 4200
-      memoryLimit: 1G
+      memoryLimit: 2G
       mountSources: true
 commands:
   - id: install
@@ -36,7 +36,7 @@ commands:
       label: "Start application"
       component: nodejs
       workingDir: ${PROJECTS_ROOT}/nodejs-angular
-      commandLine: "yarn start"
+      commandLine: "yarn run start --host 0.0.0.0 --disableHostCheck true"
       group:
         kind: run
   - id: lint
