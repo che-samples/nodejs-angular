@@ -39,11 +39,3 @@ commands:
       commandLine: "yarn run start --host 0.0.0.0 --disableHostCheck true"
       group:
         kind: run
-  - id: lint
-    exec:
-      label: "Run linting tools on application"
-      component: nodejs
-      workingDir: ${PROJECTS_ROOT}/nodejs-angular
-      commandLine: "yarn run lint"
-      group:
-        kind: run
