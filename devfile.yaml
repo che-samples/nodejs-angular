@@ -37,6 +37,6 @@ commands:
       label: "Start application"
       component: tools
       workingDir: ${PROJECT_SOURCE}
-      commandLine: "NODE_OPTIONS=--openssl-legacy-provider yarn run start --host 0.0.0.0 --disableHostCheck true -openssl-legacy-provider"
+      commandLine: "NODE_OPTIONS=--openssl-legacy-provider yarn run start --host 0.0.0.0 --disableHostCheck true"
       group:
         kind: run
