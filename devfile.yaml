@@ -12,9 +12,6 @@ components:
           targetPort: 4200
       memoryLimit: 2G
       mountSources: true
-      env:
-        - name: NODE_OPTIONS
-          value: "--openssl-legacy-provider"
 
 commands:
   - id: install-dependencies
@@ -31,7 +28,7 @@ commands:
       label: "Build application"
       component: tools
       workingDir: ${PROJECT_SOURCE}
-      commandLine: "yarn build"
+      commandLine: "yarn build -openssl-legacy-provider"
       group:
         kind: build
 
@@ -40,6 +37,6 @@ commands:
       label: "Start application"
       component: tools
       workingDir: ${PROJECT_SOURCE}
-      commandLine: "yarn run start --host 0.0.0.0 --disableHostCheck true"
+      commandLine: "yarn run start --host 0.0.0.0 --disableHostCheck true -openssl-legacy-provider"
       group:
         kind: run
