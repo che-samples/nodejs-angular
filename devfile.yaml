@@ -8,7 +8,7 @@ components:
       endpoints:
         - exposure: public
           name: angular
-          protocol: http
+          protocol: https
           targetPort: 4200
       memoryLimit: 2G
       mountSources: true
