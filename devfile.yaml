@@ -28,7 +28,7 @@ commands:
       label: "Build application"
       component: tools
       workingDir: ${PROJECT_SOURCE}
-      commandLine: "yarn build -openssl-legacy-provider"
+      commandLine: "NODE_OPTIONS=--openssl-legacy-provider yarn build"
       group:
         kind: build
 
@@ -37,6 +37,6 @@ commands:
       label: "Start application"
       component: tools
       workingDir: ${PROJECT_SOURCE}
-      commandLine: "yarn run start --host 0.0.0.0 --disableHostCheck true -openssl-legacy-provider"
+      commandLine: "NODE_OPTIONS=--openssl-legacy-provider yarn run start --host 0.0.0.0 --disableHostCheck true -openssl-legacy-provider"
       group:
         kind: run
